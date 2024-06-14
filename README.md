@@ -1,5 +1,5 @@
 # The-Dakts-Shop
-  _Welcome to DAKTS:tm: - Indulge in Nature's Nourishment!_
+  _Welcome to DAKTS :tm: - Indulge in Nature's Nourishment!_
   :peanuts:
   Hey there, seekers of self-care and guardians of holistic well-being! Get ready to elevate your snacking experience with DAKTS – where every bite is a celebration of mindful pleasure and reverence for Mother Nature.
 ***
@@ -11,12 +11,12 @@
 5. [Special Thanks:green_heart:](#thanks)
 ***
 <a name="general-info"></a>
-### General Information
+### General Information :dart:
 This is a Fullstack MEAN Stack project created within the framework of the Fullstack Web Development Bootcamp at BIT Institute. 
 ![Web Development](https://img.freepik.com/vector-gratis/ilustracion-concepto-estructuras-javascript_114360-743.jpg?t=st=1718329825~exp=1718333425~hmac=02710f715640e41213640d078c247bab301d2112b9bbacc39e704d08e4848393&w=1480)
 ***
 <a name="technologies"></a>
-### Technologies:video_game:
+### Technologies :video_game:
 Technologies used in the development of this project:
 * [Angular](https://angular.io/)
 * [Node.js](https://nodejs.org/): Versión 12.3 
@@ -27,7 +27,7 @@ Technologies used in the development of this project:
 * [Mongoose](https://www.npmjs.com/package/mongoose): Version 8.4.1
 ***
 <a name="process"></a>
-### The Process:jigsaw:
+### The Process :jigsaw:
 This was the process involved in creating this project: 
 
 #### At the Frontend
@@ -67,16 +67,19 @@ This was the process involved in creating this project:
 ***
 <a name="autor"></a>
 ### About the Autor
-#### Marialo Studio:white_heart:
-My name is **Lina María López:woman_student:**, graphic designer since 2012, creative since the age of 4. Mother of two beautiful daughters: Noelia (14) and Ivanna (4), who naturally inspire me every day. They give me the strenght to keep moving forward in order to achieve my dreams. 
+#### Marialo Studio :white_heart:
+![Lini Lopez](https://avatars.githubusercontent.com/u/89900388?v=4)
+My name is **Lina María López** :woman_student: , graphic designer since 2012, creative since the age of 4. Mother of two beautiful daughters: Noelia (14) and Ivanna (4), who naturally inspire me every day. They give me the strenght to keep moving forward in order to achieve my dreams. 
+
 My firm ```Marialo Studio``` is the space where I have worked the last 8 years as a Brand & Web Design Freelancer. With 11 years of experience coding HTML & CSS websites, I needed to learn new programming languages. This Bootcamp was the perfect scenario to take the risk.
-Now I have a Github Account!:nerd_face: Please find me there as [Marialo Studio](https://github.com/Marialostudio/)
+
+Now I have a Github Account! :nerd_face: Please find me there as [Marialo Studio](https://github.com/Marialostudio/)
 ***
 <a name="thanks"></a>
-### Special Thanks:green_heart:
-* ``` **[BIT Institute:school:](https://www.linkedin.com/school/bit---bogot%C3%A1-institute-of-technology/?originalSubdomain=co)** ``` For its commitment to build a strong community and prepare great developers.
-* ``` **[Javier Andrés:man_teacher:](https://github.com/javierandres-dev)** ``` For his patience and capability teaching and sharing his knowledge and experience as a software developer. 
+### Special Thanks :green_heart:
+* :school: ``` **[BIT Institute](https://www.linkedin.com/school/bit---bogot%C3%A1-institute-of-technology/?originalSubdomain=co)** ``` For its commitment to build a strong community and prepare great developers.
+* :man_teacher: ``` **[Javier Andrés](https://github.com/javierandres-dev)** ``` For his patience and capability teaching and sharing his knowledge and experience as a software developer. 
 
 
 > [!CAUTION]
-> The :copyright:copyright on this project belongs solely to the student Lina López. The brand information, graphics and code used in the construction of the project are part of the confidentiality contract signed between Lina López and her client.
+> The :copyright: copyright on this project belongs solely to the student Lina López. The brand information, graphics and code used in the construction of the project are part of the confidentiality contract signed between Lina López and her client.
