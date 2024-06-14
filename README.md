@@ -66,10 +66,11 @@ This was the process involved in creating this project:
 ```
 ***
 <a name="autor"></a>
-### About the Autor
+### About the Autor :woman_student:
 #### Marialo Studio :white_heart:
 ![Lini Lopez](https://avatars.githubusercontent.com/u/89900388?v=4)
-My name is **Lina María López** :woman_student: , graphic designer since 2012, creative since the age of 4. Mother of two beautiful daughters: Noelia (14) and Ivanna (4), who naturally inspire me every day. They give me the strenght to keep moving forward in order to achieve my dreams. 
+
+My name is ```Lina María López,``` graphic designer since 2012, creative since the age of 4. Mother of two beautiful daughters: Noelia (14) and Ivanna (4), who naturally inspire me every day. They give me the strenght to keep moving forward in order to achieve my dreams. 
 
 My firm ```Marialo Studio``` is the space where I have worked the last 8 years as a Brand & Web Design Freelancer. With 11 years of experience coding HTML & CSS websites, I needed to learn new programming languages. This Bootcamp was the perfect scenario to take the risk.
 
@@ -77,8 +78,8 @@ Now I have a Github Account! :nerd_face: Please find me there as [Marialo Studio
 ***
 <a name="thanks"></a>
 ### Special Thanks :green_heart:
-* :school: ``` **[BIT Institute](https://www.linkedin.com/school/bit---bogot%C3%A1-institute-of-technology/?originalSubdomain=co)** ``` For its commitment to build a strong community and prepare great developers.
-* :man_teacher: ``` **[Javier Andrés](https://github.com/javierandres-dev)** ``` For his patience and capability teaching and sharing his knowledge and experience as a software developer. 
+* :school: ``` [BIT Institute](https://www.linkedin.com/school/bit---bogot%C3%A1-institute-of-technology/?originalSubdomain=co) ``` For its commitment to build a strong community and prepare great developers.
+* :man_teacher: ``` [Javier Andrés](https://github.com/javierandres-dev) ``` For his patience and capability teaching and sharing his knowledge and experience as a software developer. 
 
 
 > [!CAUTION]
