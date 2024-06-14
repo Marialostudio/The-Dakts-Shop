@@ -1,20 +1,22 @@
 # The-Dakts-Shop
-  _Welcome to DAKTS - Indulge in Nature's Nourishment!_ 
+  _Welcome to DAKTS:tm: - Indulge in Nature's Nourishment!_
+  :peanuts:
   Hey there, seekers of self-care and guardians of holistic well-being! Get ready to elevate your snacking experience with DAKTS – where every bite is a celebration of mindful pleasure and reverence for Mother Nature.
 ***
  ## Table of Contents
 1. [General Information](#general-info)
 2. [Technologies](#technologies)
-3. [Process](#process)
-4. [Instructions](#instructions)
+3. [The Process](#process)
+4. [About the Autor](#autor)
+5. [Special Thanks:green_heart:](#thanks)
 ***
 <a name="general-info"></a>
 ### General Information
 This is a Fullstack MEAN Stack project created within the framework of the Fullstack Web Development Bootcamp at BIT Institute. 
-![BIT Institute](https://bit.institute/images/Curso-Desarrollo-Full-Stack-864wX360h-v3.webpg)
+![Web Development](https://img.freepik.com/vector-gratis/ilustracion-concepto-estructuras-javascript_114360-743.jpg?t=st=1718329825~exp=1718333425~hmac=02710f715640e41213640d078c247bab301d2112b9bbacc39e704d08e4848393&w=1480)
 ***
 <a name="technologies"></a>
-### Technologies
+### Technologies:video_game:
 Technologies used in the development of this project:
 * [Angular](https://angular.io/)
 * [Node.js](https://nodejs.org/): Versión 12.3 
@@ -25,7 +27,7 @@ Technologies used in the development of this project:
 * [Mongoose](https://www.npmjs.com/package/mongoose): Version 8.4.1
 ***
 <a name="process"></a>
-### Process
+### The Process:jigsaw:
 This was the process involved in creating this project: 
 
 #### At the Frontend
@@ -63,29 +65,18 @@ This was the process involved in creating this project:
 14. Checked data persistence in Mongo Atlas.
 ```
 ***
-<a name="instructions"></a>
-### Instrucciones
-Para realizar pruebas con este proyecto, debe tener en cuenta lo siguiente:
-* Clonar el proyecto con ```$git clone https://github.com/Marialostudio/proyecto-REST-API-zodiacsigns.git```
-* Ubicarse en la carpeta raíz del repositorio ```$ cd ../su-carpeta```
-* Ejecutar la instalación con el comando ```npm install```
-* Correr el proyecto con el comando ```npm run dev```
-* Abrir postman: crear una colección que incluya la solicitud de tipo ```POST``` con el link _http://localhost:3000/zodiacsigns_ e incluya en el body (raw y JSON) el objeto:
-```
-{
-        "signo": "Libra",
-        "desde": "2024-09-23",
-        "hasta": "2024-10-22",
-        "simbolo": "La Balanza",
-        "orden": "7",
-        "planeta": "venus",
-        "fuego": false,
-        "agua": true,
-        "aire": false,
-        "tierra" : false
-    }
-```
-* Incluya en la colección la solicitud de tipo ```GET``` con el link _http://localhost:3000/zodiacsigns/incluya-el-id_ para poder leer un signo.
-* Incluya en la colección la solicitud de tipo ```GET``` con el link _http://localhost:3000/zodiacsigns/_ para poder leer todos los signos.
-* Incluya en la colección la solicitud de tipo ```PUT``` con el link _http://localhost:3000/zodiacsigns/incluya-el-id_ para poder modificar y actualizar un signo.
-* Incluya en la colección la solicitud de tipo ```DELETE``` con el link _http://localhost:3000/zodiacsigns/incluya-el-id_ para poder eliminar un signo.
+<a name="autor"></a>
+### About the Autor
+#### Marialo Studio:white_heart:
+My name is **Lina María López:woman_student:**, graphic designer since 2012, creative since the age of 4. Mother of two beautiful daughters: Noelia (14) and Ivanna (4), who naturally inspire me every day. They give me the strenght to keep moving forward in order to achieve my dreams. 
+My firm ```Marialo Studio``` is the space where I have worked the last 8 years as a Brand & Web Design Freelancer. With 11 years of experience coding HTML & CSS websites, I needed to learn new programming languages. This Bootcamp was the perfect scenario to take the risk.
+Now I have a Github Account!:nerd_face: Please find me there as [Marialo Studio](https://github.com/Marialostudio/)
+***
+<a name="thanks"></a>
+### Special Thanks:green_heart:
+* ``` **[BIT Institute:school:](https://www.linkedin.com/school/bit---bogot%C3%A1-institute-of-technology/?originalSubdomain=co)** ``` For its commitment to build a strong community and prepare great developers.
+* ``` **[Javier Andrés:man_teacher:](https://github.com/javierandres-dev)** ``` For his patience and capability teaching and sharing his knowledge and experience as a software developer. 
+
+
+> [!CAUTION]
+> The :copyright:copyright on this project belongs solely to the student Lina López. The brand information, graphics and code used in the construction of the project are part of the confidentiality contract signed between Lina López and her client.
