@@ -79,7 +79,7 @@ Now I have a Github Account! :nerd_face: Please find me there as [Marialo Studio
 <a name="thanks"></a>
 ### Special Thanks :green_heart:
 * :school: [BIT Institute](https://www.linkedin.com/school/bit---bogot%C3%A1-institute-of-technology/?originalSubdomain=co) For its commitment to build a strong community and prepare great developers.
-* :man_teacher: [Javier Andrés](https://github.com/javierandres-dev) For his patience and capability teaching and sharing his knowledge and experience as a software developer.
+* :man_teacher: [Javier Andrés Garzón](https://github.com/javierandres-dev) For his patience and capability teaching and sharing his knowledge and experience as a software developer.
 * :family_woman_girl: To my mom, for sponsoring my participation in the Bootcamp
 * :angel: To my angels, for giving me a hand when my head was collapsing and I no longer understood anything.
 ***
