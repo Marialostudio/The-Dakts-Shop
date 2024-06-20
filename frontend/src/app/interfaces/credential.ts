@@ -1,4 +1,4 @@
 export interface Credential {
-    username: string;
+    emailAddress: string;
     password: string;
 }

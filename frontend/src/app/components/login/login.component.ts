@@ -1,7 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators } from "@angular/forms";
-import { Credential } from "../../interfaces/credential";
 import { Router } from "@angular/router";
+import { JwtHelperService } from "@auth0/angular-jwt";
+import { Credential } from "../../interfaces/credential";
+import { LoginService } from "../../services/login.service";
+
+const jwtHelperService = new JwtHelperService();
 
 @Component({
   selector: 'app-login',
@@ -12,30 +16,30 @@ import { Router } from "@angular/router";
 })
 
 export class LoginComponent {
-  //router = inject(Router);
-  //loginService: LoginService = inject(LoginService);
+  router = inject(Router);
+  loginService: LoginService = inject(LoginService);
 
   credentialsForm = new FormGroup({
-    username: new FormControl('', Validators.required),
+    emailAddress: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
   });
 
   handleSubmit() {
     if (this.credentialsForm.valid) {
-      const username = this.credentialsForm.value.username;
+      const emailAddress = this.credentialsForm.value.emailAddress;
       const password = this.credentialsForm.value.password;
 
-      if (typeof username === 'string' && typeof password === 'string') {
+      if (typeof emailAddress === 'string' && typeof password === 'string') {
         const credential: Credential = {
-          username,
+          emailAddress,
           password,
         };
         this.loginService.login(credential).subscribe((response: any) => {
-          //console.log('response: ', response);
-          //const decoded = jwtHelperService.decodeToken(response.datos);
-          //console.log('decoded: ', decoded);
-          //localStorage.setItem('token', response.datos);
-          //this.router.navigateByUrl('/shop');
+          console.log('response: ', response);
+          const decoded = jwtHelperService.decodeToken(response.data);
+          console.log('decoded: ', decoded);
+          localStorage.setItem('token', response.data);
+          this.router.navigateByUrl('/my-account');
         });
       }
     } else {
