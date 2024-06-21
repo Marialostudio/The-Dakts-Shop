@@ -38,7 +38,7 @@ export class LoginComponent {
           console.log('response: ', response);
           const decoded = jwtHelperService.decodeToken(response.data);
           console.log('decoded: ', decoded);
-          localStorage.setItem('token', response.data);
+          localStorage.setItem('token', response.data.token);
           this.router.navigateByUrl('/my-account');
         });
       }

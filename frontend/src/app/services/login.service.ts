@@ -19,4 +19,12 @@ export class LoginService {
     return this.httpClient.get(`${this.API_URL}/${token} `);
   }
 
+  isLogin() {
+    if (localStorage.getItem('token')) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }

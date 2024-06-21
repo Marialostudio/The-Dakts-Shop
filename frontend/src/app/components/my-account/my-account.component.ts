@@ -1,8 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { JwtHelperService } from "@auth0/angular-jwt";
 import { LoginService } from "../../services/login.service";
-
-const jwtHelperService = new JwtHelperService();
 
 @Component({
   selector: 'app-my-account',
@@ -18,10 +15,15 @@ export class MyAccountComponent {
     console.log("token: ", token);
     if (token) {
       this.loginService.verifyToken(token).subscribe((response: any)=>{
-        console.log('response: ', response)
-      })
+        if (response.resultado === 'bien') {
+          //this.name = response.data.name;
+          //this.toastrService.success(`Hello, ${this.name}!`);
+        } else {
+          //this.loginService.logout();
+        }
+      });
     } else {
-      
+      //this.loginService.logout();
     }
   }
 }
