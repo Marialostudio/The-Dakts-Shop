@@ -1,5 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Router } from "@angular/router";
+import { ToastrService } from 'ngx-toastr';
 import { Credential } from "../interfaces/credential";
 
 @Injectable({
@@ -8,6 +10,8 @@ import { Credential } from "../interfaces/credential";
 export class LoginService {
   constructor() { }
   httpClient = inject(HttpClient);
+  toastrService = inject(ToastrService);
+  router = inject(Router);
 
   API_URL = 'http://localhost:3000/login';
 
@@ -25,6 +29,12 @@ export class LoginService {
     } else {
       return false;
     }
+  }
+
+  logout() {
+    this.toastrService.info('Bye!');
+    localStorage.removeItem('token');
+    this.router.navigate(['/']);
   }
 
 }

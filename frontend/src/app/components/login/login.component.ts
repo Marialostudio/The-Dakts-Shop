@@ -1,11 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
-import { JwtHelperService } from "@auth0/angular-jwt";
+import { ToastrService } from 'ngx-toastr';
 import { Credential } from "../../interfaces/credential";
 import { LoginService } from "../../services/login.service";
-
-const jwtHelperService = new JwtHelperService();
 
 @Component({
   selector: 'app-login',
@@ -17,6 +15,7 @@ const jwtHelperService = new JwtHelperService();
 
 export class LoginComponent {
   router = inject(Router);
+  toastrService = inject(ToastrService);
   loginService: LoginService = inject(LoginService);
 
   credentialsForm = new FormGroup({
@@ -36,14 +35,16 @@ export class LoginComponent {
         };
         this.loginService.login(credential).subscribe((response: any) => {
           console.log('response: ', response);
-          const decoded = jwtHelperService.decodeToken(response.data);
-          console.log('decoded: ', decoded);
-          localStorage.setItem('token', response.data.token);
-          this.router.navigateByUrl('/my-account');
+          if (response.result === "Good!") {
+            localStorage.setItem('token', response.data.token);
+            this.router.navigateByUrl('/my-account');
+          } else {
+            this.toastrService.warning('Invalid credentials');
+          }
         });
       }
     } else {
-      console.log('Error: invalid form');
+      this.toastrService.warning('All fields are required');
     }
   }
 
