@@ -17,7 +17,7 @@ const LogInController = {
           if (validPassword) {
             const token = await generateToken({
                 id: userFound._id,
-                name: userFound.name,
+                firstName: userFound.firstName,
             });
             respuesta.json({
                 result: "Good!",
@@ -43,7 +43,7 @@ const LogInController = {
         }
         },
         
-        validateToken: async (solicitud, respuesta) => {
+        validToken: async (solicitud, respuesta) => {
             try {
               const token = solicitud.params.token;
               const decoded = await validateToken(token);

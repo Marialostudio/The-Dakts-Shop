@@ -13,12 +13,12 @@ export function generateToken(payload) {
   }
   
   export function validateToken(token) {
-    return new Promise((resolver, rechazar) => {
+    return new Promise((solve, reject) => {
       jwt.verify(token, 'secret key', (error, decoded) => {
         if (error) {
-          rechazar(error);
+          reject(error);
         } else {
-          resolver(decoded);
+          solve(decoded);
         }
       });
     });

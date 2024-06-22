@@ -34,9 +34,9 @@ export class LoginComponent {
           password,
         };
         this.loginService.login(credential).subscribe((response: any) => {
-          console.log('response: ', response);
+          //console.log('response: ', response);
           if (response.result === "Good!") {
-            localStorage.setItem('token', response.data.token);
+            localStorage.setItem('token', response.data);
             this.router.navigateByUrl('/my-account');
           } else {
             this.toastrService.warning('Invalid credentials');

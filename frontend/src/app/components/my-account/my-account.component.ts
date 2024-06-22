@@ -16,10 +16,12 @@ export class MyAccountComponent {
   firstName: string = '';
   
   ngOnInit(){
-    const token: any = localStorage.getItem("token: ");
+    const token: any = localStorage.getItem('token');
+    //console.log("token: ", token);
     if (token) {
       this.loginService.verifyToken(token).subscribe((response: any)=>{
         if (response.result === 'Good!') {
+          console.log(response);
           this.firstName = response.data.firstName;
           this.toastrService.success(`Hello, ${this.firstName}!`);
         } else {
