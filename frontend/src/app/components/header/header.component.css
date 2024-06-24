@@ -1,4 +1,33 @@
 .sale-notice {
+    background-image: url(/Textura-01.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 0.7rem 2rem;
     margin: 0;
+    position: relative;
+}
+
+.sale-notice p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.03rem;
+    color: white;
+    margin: 0;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 1rem 0 2rem;
+}
+
+@media (max-width: 575.98px) {
+    .sale-notice{
+        padding: 0.7rem 1rem;
+    }
+    .sale-notice p{
+        font-size: 0.7rem;
+    }
 }

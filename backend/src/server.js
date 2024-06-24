@@ -1,3 +1,4 @@
+import path from "path";
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
@@ -13,6 +14,7 @@ server.use(express.json());
 server.use("/users", daktsUsersRouter);
 server.use("/login", logInRouter);
 server.use("/products", daktsProductRouter);
+server.use("/images", express.static(path.resolve('images')));
 
 server.get('/', (solicitud, respuesta) =>{
     //respuesta.json({mensaje: "Works!"});

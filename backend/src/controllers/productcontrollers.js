@@ -1,4 +1,5 @@
 import multer from "multer";
+import fs from "fs-extra";
 import DaktsProductModel from "../models/productmodel.js";
 
 const DaktsProductsController = {
@@ -35,10 +36,7 @@ const DaktsProductsController = {
                     weight: solicitud.body.weight,
                     availables: solicitud.body.availables,
                     inStock: solicitud.body.inStock,
-                    image: {
-                      data: solicitud.file.filename,
-                      contentType: 'image/png',
-                    },
+                    image: solicitud.file.filename,
                   });
                   const productCreated = await newProduct.save();
                   if (productCreated._id) {
@@ -120,8 +118,9 @@ const DaktsProductsController = {
 
       deleteProduct: async (solicitud, respuesta) => {
         try {
-          const userDeleted = await DaktsProductModel.findByIdAndDelete(solicitud.params.id)
-          if (userDeleted._id) {
+          const productDeleted = await DaktsProductModel.findByIdAndDelete(solicitud.params.id)
+          if (productDeleted._id) {
+            await fs.unlink('images/' + productDeleted.image);
             respuesta.json({
               result: "Good!",
               message: "Product deleted",

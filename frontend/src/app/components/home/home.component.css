@@ -1,0 +1,110 @@
+.mainhome {
+    margin-top: -100px;
+    background-image: url(/Textura-02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-section{
+    background-image: url(/Photostudio_style_2.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15rem 0;
+}
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    font-style: normal;
+    color: white;
+}
+.welcome-section{
+    background-color: #ff852d;
+    padding: 9rem 0 7rem 0;
+    margin-top: -3rem;
+}
+.signdakts{
+    margin-top: -3rem;
+}
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    font-style: normal;
+    color: white;
+}
+h5 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 1rem;
+    font-style: normal;
+    color: white;
+    margin-bottom: 2rem;
+}
+.lovers-section{
+    background-color: #5d472f;
+    padding: 7rem 0 0 0;
+}
+.products-section{
+    background-color: #5d472f;
+    padding: 0 0 7rem 0;
+}
+.chlovers{
+    align-items: center;
+}
+.chlovers h2{
+    color: #ffcfa7;
+}
+.chlovers p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffcfa7;
+    letter-spacing: 0.03rem;
+}
+.nutshape {
+    background-image: url(/nutshape.png);
+    background-position: 10% 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pistachio-butter{
+    background-image: url(/frame-pistachio-butter.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pistachio-butter:hover{
+    background-image: url(/frame-pistachio-butter-hover.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 991.98px){
+    h1 {
+        font-size: 3.6rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}

@@ -16,7 +16,7 @@ const DaktsProductSchema = new Schema({
         weight: {type: String, required: true},
         availables: {type: Number, required: true},
         inStock: {type: Boolean, required: true},
-        image: {data: Buffer, contentType: String},
+        image: {type: String, required: true},
     },
     { versionKey: false, timestamps: true},
 )

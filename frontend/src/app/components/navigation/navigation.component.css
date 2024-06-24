@@ -1,0 +1,60 @@
+/* DAKTS COLORS */
+.lightdaktscolor{
+    background-color: #ffcfa7;
+}
+.mediumdaktscolor1{
+    background-color: #c76b37; 
+}
+.mediumdaktscolor2{
+    background-color: #c39964; 
+}
+.darkdaktscolor{
+    background-color: #5d472f;
+}
+.greendaktscolor{
+    background-color: #01605a;
+}
+.orangedaktscolor{
+    background-color: #ff852d;
+}
+.navbox {
+    float: inline-end;
+    padding-left: 3rem !important;
+}
+.navbar-nav li{
+    display: inline;
+    margin-right: 4rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-nav {
+    border-bottom: solid 1px white;
+    padding: 0.7rem 0 !important;
+}
+.nav-link{
+    color: white;
+}
+.nav-link.active{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+.navbar-brand {
+    margin: 0.7rem 3rem;
+}
+.navbar-toggler {
+    margin: 0.5rem 3rem 0 0;
+    border: none;
+    color: #ffffff00;
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        margin: 0 2rem;
+    }
+    .navbar-toggler {
+        margin: 0.5rem 1rem 0 0;
+    }
+}
