@@ -1,5 +1,7 @@
 .mainhome {
     margin-top: -100px;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
     background-image: url(/Textura-02.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -20,6 +22,14 @@ h1 {
     font-style: normal;
     color: white;
 }
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    font-style: normal;
+    color: white;
+    letter-spacing: 0.03rem;
+}
 .welcome-section{
     background-color: #ff852d;
     padding: 9rem 0 7rem 0;
@@ -35,21 +45,35 @@ h2 {
     font-style: normal;
     color: white;
 }
-h5 {
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    font-style: normal;
+    color: white;
+}
+h4 {
     font-family: "IBM Plex Mono", monospace;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
     font-style: normal;
     color: white;
-    margin-bottom: 2rem;
+}
+h4 b {
+    font-weight: 700;
+}
+.clearfix{
+    height: 2rem;
 }
 .lovers-section{
     background-color: #5d472f;
     padding: 7rem 0 0 0;
+    margin-top: 0.25rem;
 }
 .products-section{
     background-color: #5d472f;
     padding: 0 0 7rem 0;
+    margin-top: -0.5rem;
 }
 .chlovers{
     align-items: center;
@@ -81,30 +105,438 @@ h5 {
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: .35s ease-in-out;
 }
-
+.card{
+    background: none;
+    border: none;
+    margin: 0 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.card-body{
+    padding: 1rem 0 1rem 4rem;
+}
+.card-body h5 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: normal;
+    color: white;
+}
+.card-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    letter-spacing: 0.02rem;
+}
+.carousel-price{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: white;
+    margin: 2rem 0;
+}
+.btn-primary{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff852d;
+    border-color: #ff852d;
+    border-radius: 10rem;
+}
+.btn-primary:hover{
+    background-color: #c76b37;
+    border-color: #c76b37;
+}
+.btn{
+    padding: 0.9rem 1.5rem;
+}
+.btn span{
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .3s cubic-bezier(0,.5,.5,1);
+    -o-transition: all .3s cubic-bezier(0,.5,.5,1);
+    transition: all .3s cubic-bezier(0,.5,.5,1);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.carousel-control-prev{
+    justify-content: flex-start;
+    width: 6%;
+}
+.carousel-control-next{
+    justify-content: flex-end;
+    width: 6%;
+}
+.img-wrapper{
+    max-width: 100%;
+    height: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.carousel-inner{
+    padding: 1rem;
+}
+.centerbadge{
+    margin-top: 1rem;
+    text-align: -webkit-right;
+}
+.dishdakts{
+    margin-top: -8rem;
+}
+.rightdish{
+    justify-content: right !important;
+}
+.dishnuts{
+    width: 100%;
+}
+.crafted-section{
+    background-color: #c76b37;
+    padding: 12rem 0 0 0;
+    margin-top: -8.9rem;
+}
+.lifestylepics{
+    width: 90%;
+}
+.brownshape{
+    background-image: url(/bg-nutshape.png);
+    background-position: 0% 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-content: flex-end;
+}
+.infobox{
+    padding: 10rem 0 0 6rem;
+}
+.heart-badge{
+    margin-top: -3rem;
+    padding-right: 2rem;
+}
+.manifiesto-section{
+    background-image: url(/bg-brandtexture.webp);
+    background-color: #c76b37;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 18rem 0 5rem 0;
+}
 
 @media (max-width: 575.98px) {
     h1 {
-        font-size: 2.1rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
-}
-@media (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
-    h2 {
         font-size: 2.8rem;
     }
+    h2 {
+        font-size: 1.9rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h4 {
+        font-size: 0.75rem;
+    }
+    .welcome-section{
+        padding: 5.5rem 1rem 3.5rem 1rem;
+    }
+    .lovers-section{
+        padding: 5rem 1rem 0 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.02rem;
+    }
+    .card{
+        margin: 0 0.5rem;
+    }
+    .card-body h5{
+        font-size: 1.8rem;
+    }
+    .card-text{
+        font-size: 1.1rem;
+    }
+    .centerbadge img{
+        width: 160px;
+    }
+    .dishdakts{
+        margin-top: -4.5rem;
+        padding: 0 1rem;
+    }
+    .dishnuts{
+        width: 250px;
+        float: right;
+    }
+    .crafted-section{
+        margin-top: -2rem;
+        padding: 8rem 1rem 6rem 1rem;
+    }
+    .infobox{
+        padding: 8rem 1rem 0 6rem;
+    }
+    .lifestylepics{
+        width: 80%;
+    }
+    .crafted-section{
+        padding: 8rem 0 0 0;
+    }
+    .brownshape{
+        margin-top: 1rem;
+        background-size: 80%;
+        background-position: center;
+    }
+    .heart-badge{
+        margin-top: 1rem;
+    }
+    .manifiesto-section{
+        padding: 13rem 2rem 3rem 2rem;
+    }
 }
-@media (max-width: 991.98px){
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2.1rem;
+    }
+    h3 {
+        font-size: 1.9rem;
+    }
+    p {
+        font-size: .75rem;
+        line-height: 1.1rem;
+        letter-spacing: 0.02rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    .hero-section{
+        padding: 10rem 0;
+    }
+    .welcome-section{
+        padding: 6rem 0 5rem 0;
+    }
+    .lovers-section{
+        padding: 5rem 0 0 0;
+    }
+    .products-section{
+        padding: 0 0 5rem 0;
+    }
+    .card{
+        margin: 0 0.7rem;
+    }
+    .card-body{
+        padding: 1rem 0 1rem 2rem;
+    }
+    .card-body h5{
+        font-size: 1.4rem;
+    }
+    .card-text{
+        font-size: 0.9rem;
+    }
+    .carousel-price{
+        margin: 0.9rem 0;
+    }
+    .btn-primary{
+        font-size: 0.8rem;
+    }
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/2);
+    }
+    .img-wrapper{
+        height: 45vw;
+    }
+    .centerbadge{
+        margin-top: 0.5rem;
+    }
+    .centerbadge img{
+        width: 180px;
+    }
+    .dishdakts{
+        margin-top: -5rem;
+    }
+    .crafted-section{
+        margin-top: -3.8rem;
+        padding: 9rem 0 0 0;
+    }
+    .infobox{
+        padding: 6rem 0 0 2rem;
+    }
+    .heart-badge{
+        margin-top: -9rem;
+        padding-right: 12rem;
+    }
+    .manifiesto-section{
+        padding: 12rem 2rem 3rem 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 2.1rem;
+    }
+    p {
+        font-size: .8rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.02rem;
+    }
+    h4 {
+        font-size: 0.9rem;
+    }
+    .hero-section{
+        padding: 9.5rem 0;
+    }
+    .welcome-section{
+        padding: 6rem 0 4rem 0;
+    }
+    .img-wrapper{
+        height: 30vw;
+    }
+    .card-body{
+        padding: 1rem 0 1rem 3rem;
+    }
+    .card-body h5{
+        font-size: 1.6rem;
+    }
+    .card-text{
+        font-size: 1rem;
+    }
+    .carousel-price{
+        margin: 1rem 0;
+    }
+    .btn-primary{
+        font-size: 0.9rem;
+    }
+    .dishdakts{
+        margin-top: -6rem;
+    }
+    .crafted-section{
+        margin-top: -4.4rem;
+        padding: 9rem 0 0 0;
+    }
+    .infobox{
+        padding: 5rem 0 0 3rem;
+    }
+    .heart-badge{
+        margin-top: -8rem;
+        padding-right: 12rem;
+    }
+    .manifiesto-section{
+        padding: 14rem 0 4rem 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
     h1 {
         font-size: 3.6rem;
     }
     h2 {
         font-size: 3rem;
     }
+    h3 {
+        font-size: 2.4rem;
+    }
+    p {
+        font-size: .8rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.02rem;
+    }
+    .img-wrapper{
+        height: 30vw;
+    }
+    .card-body{
+        padding: 1rem 0 1rem 4rem;
+    }
+    .card-body h5{
+        font-size: 2.1rem;
+    }
+    .card-text{
+        font-size: 1.1rem;
+    }
+    .carousel-price{
+        margin: 1.5rem 0;
+    }
+    .dishdakts{
+        margin-top: -7rem;
+    }
+    .crafted-section{
+        margin-top: -5rem;
+        padding: 10rem 0 0 0;
+    }
+    .infobox{
+        padding: 8rem 0 0 4rem;
+    }
+    .heart-badge{
+        margin-top: -7rem;
+        padding-right: 7rem;
+    }
 }
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    h1 {
+        font-size: 4.2rem;
+    }
+    h2 {
+        font-size: 3.6rem;
+    }
+    h3 {
+        font-size: 2.8rem;
+    }
+    .crafted-section{
+        margin-top: -6.4rem;
+    }
+    .infobox{
+        padding: 8rem 0 0 4rem;
+    }
+    .heart-badge{
+        margin-top: -6rem;
+        padding-right: 6rem;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+    .img-wrapper{
+        height: 23vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .card-body{
+        padding: 1rem 0 1rem 6rem;
+    }
+    .card-body h5{
+        font-size: 2.4rem;
+    }
+    
+}
+

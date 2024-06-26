@@ -1,5 +1,57 @@
 .mainlogin {
     margin-top: -140px;
     background-color: #ffcfa7;
-    padding: 10rem 0;
+    padding: 15rem 0;
+}
+.formspace{
+    padding: 0 2rem;
+}
+h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-style: normal;
+    color: #5d472f;
+}
+label{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: #5d472f;
+}
+.form-control{
+    border-radius: 3px;
+    background-color: #c39964;
+    border: none;
+    padding: 0.700rem 0.75rem;
+}
+.btn-general-dakts{
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #5d472f;
+    width: 50%;
+    border-radius: 99rem;
+    padding: 0.800rem;
+    margin-top: 1.2rem;
+    color: white;
+}
+.btn-general-dakts:hover{
+    background-color: #c76b37;
+    transition: .15s ease-in-out;
+}
+.form-control:hover{
+    background-color: burlywood;
+    transition: .15s ease-in-out;
+}
+
+@media (max-width: 575.98px) {
+    .formspace{
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .formspace{
+        padding: 0 1rem;
+    }
 }
