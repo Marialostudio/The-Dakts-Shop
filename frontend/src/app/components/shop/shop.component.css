@@ -1,0 +1,355 @@
+.mainshop {
+    margin-top: -100px;
+    /* padding-left: 0.9rem;
+    padding-right: 0.9rem; */
+    background-image: url(/Textura-02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-section {
+    background-image: url(/Photostudio_style_3.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem 2rem 9rem 2rem;
+}
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    font-style: normal;
+    color: white;
+}
+.signdakts{
+    margin-top: -3rem;
+}
+.clearfix{
+    height: 2rem;
+}
+.products-section{
+    background-color: #5d472f;
+    padding: 9rem 0 7rem 0;
+    margin-top: -3rem;
+}
+.chlovers{
+    align-items: center;
+}
+.chlovers h2{
+    color: #ffcfa7;
+}
+.chlovers p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffcfa7;
+    letter-spacing: 0.03rem;
+}
+.nutshape {
+    background-image: url(/nutshape.png);
+    background-position: 10% 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pistachio-butter{
+    background-image: url(/frame-pistachio-butter.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pistachio-butter:hover{
+    background-image: url(/frame-pistachio-butter-hover.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .35s ease-in-out;
+}
+.card{
+    background: none;
+    border: none;
+    margin: 0rem;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.card-body{
+    padding: 1rem 0 1rem 4rem;
+}
+.card-body h5 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: normal;
+    color: white;
+}
+.card-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    letter-spacing: 0.02rem;
+}
+.carousel-price{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: white;
+    margin: 2rem 0;
+}
+.btn-primary{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff852d;
+    border-color: #ff852d;
+    border-radius: 10rem;
+}
+.btn-primary:hover{
+    background-color: #c76b37;
+    border-color: #c76b37;
+}
+.btn{
+    padding: 0.9rem 1.5rem;
+}
+.btn span{
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .3s cubic-bezier(0,.5,.5,1);
+    -o-transition: all .3s cubic-bezier(0,.5,.5,1);
+    transition: all .3s cubic-bezier(0,.5,.5,1);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.img-wrapper{
+    max-width: 100%;
+    height: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.carousel-inner{
+    padding: 1rem;
+}
+.centerbadge{
+    margin-top: 1rem;
+    text-align: -webkit-right;
+}
+.dishdakts{
+    margin-top: -8rem;
+}
+.rightdish{
+    justify-content: right !important;
+}
+.dishnuts{
+    width: 100%;
+}
+
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h4 {
+        font-size: 0.75rem;
+    }
+    .allproducts {
+        display: none;
+    }
+    .card-body h5{
+        font-size: 1.8rem;
+    }
+    .card-text{
+        font-size: 1.1rem;
+    }
+    .centerbadge img{
+        width: 160px;
+    }
+    .dishdakts{
+        margin-top: -4.5rem;
+        padding: 0 1rem;
+    }
+    .dishnuts{
+        width: 250px;
+        float: right;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2.1rem;
+    }
+    h3 {
+        font-size: 1.9rem;
+    }
+    p {
+        font-size: .75rem;
+        line-height: 1.1rem;
+        letter-spacing: 0.02rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    .hero-section{
+        padding: 10rem 2rem 6rem 2rem;
+    }
+    .card-body{
+        padding: 1rem 0 1rem 2rem;
+    }
+    .card-body h5{
+        font-size: 1.4rem;
+    }
+    .card-text{
+        font-size: 0.9rem;
+    }
+    .carousel-price{
+        margin: 0.9rem 0;
+    }
+    .btn-primary{
+        font-size: 0.8rem;
+    }
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/2);
+    }
+    .img-wrapper{
+        height: 45vw;
+    }
+    .centerbadge{
+        margin-top: 0.5rem;
+    }
+    .centerbadge img{
+        width: 180px;
+    }
+    .dishdakts{
+        margin-top: -5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 2.1rem;
+    }
+    p {
+        font-size: .8rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.02rem;
+    }
+    h4 {
+        font-size: 0.9rem;
+    }
+    .img-wrapper{
+        height: 30vw;
+    }
+    .card-body{
+        padding: 1rem 0 1rem 3rem;
+    }
+    .card-body h5{
+        font-size: 1.6rem;
+    }
+    .card-text{
+        font-size: 1rem;
+    }
+    .carousel-price{
+        margin: 1rem 0;
+    }
+    .btn-primary{
+        font-size: 0.9rem;
+    }
+    .dishdakts{
+        margin-top: -6rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+    p {
+        font-size: .8rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.02rem;
+    }
+    .img-wrapper{
+        height: 30vw;
+    }
+    .card-body{
+        padding: 1rem 0 1rem 4rem;
+    }
+    .card-body h5{
+        font-size: 2.1rem;
+    }
+    .card-text{
+        font-size: 1.1rem;
+    }
+    .carousel-price{
+        margin: 1.5rem 0;
+    }
+    .dishdakts{
+        margin-top: -7rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    h1 {
+        font-size: 4.2rem;
+    }
+    h2 {
+        font-size: 3.6rem;
+    }
+    h3 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .carousel{
+        display: none;
+    }
+    .img-wrapper{
+        height: 23vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .card-body{
+        padding: 1rem 0 1rem 6rem;
+    }
+    .card-body h5{
+        font-size: 2.4rem;
+    }
+    
+}

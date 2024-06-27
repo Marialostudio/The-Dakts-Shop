@@ -4,11 +4,12 @@ import { Router } from "@angular/router";
 import { ToastrService } from 'ngx-toastr';
 import { Credential } from "../../interfaces/credential";
 import { LoginService } from "../../services/login.service";
+import { SigninComponent } from "../../components/signin/signin.component";
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, SigninComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

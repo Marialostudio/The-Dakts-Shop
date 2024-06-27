@@ -1,7 +1,16 @@
 .mainlogin {
     margin-top: -140px;
+    /* padding-left: 0.9rem;
+    padding-right: 0.9rem; */
+    background-image: url(/Textura-02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-section {
     background-color: #ffcfa7;
-    padding: 15rem 0;
+    padding: 15rem 0 5rem 0;
 }
 .formspace{
     padding: 0 2rem;

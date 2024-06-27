@@ -1,0 +1,57 @@
+.main-myaccount {
+    margin-top: -100px;
+    /* padding-left: 0.9rem;
+    padding-right: 0.9rem; */
+    background-image: url(/Textura-02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.your-account{
+    background-color: #ffcfa7;
+    padding: 15rem 2rem;
+}
+.nutshape {
+    background-image: url(/nutshape.png);
+    background-position: 10% 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-style: normal;
+    color: #5d472f;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    font-style: normal;
+    color: #5d472f;
+    letter-spacing: 0.03rem;
+}
+
+@media (max-width: 575.98px) {
+    h3 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h3 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}

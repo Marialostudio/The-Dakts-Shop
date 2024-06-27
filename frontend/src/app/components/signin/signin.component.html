@@ -1,0 +1,24 @@
+<form [formGroup]="newaccountForm" (ngSubmit)="handleSubmit()" class="py-4">
+    <div class="mb-3 inputfield">
+        <label for="inputFirstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="inputFirstName" formControlName="firstName"/>
+    </div>
+      <div class="mb-3 inputfield">
+        <label for="inputLastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="inputLastName" formControlName="lastName"/>
+    </div>
+    <div class="mb-3 inputfield">
+      <label for="inputEmail" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" formControlName="emailAddress"/>
+    </div>
+    <div class="mb-3 inputfield">
+      <label for="inputPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword" formControlName="password"/>
+    </div>
+    <div class="mb-3 inputcheckbox">
+        <label for="inputSubscribe" class="form-label"><input type="checkbox" class="checkbox-control" id="inputNewsletter" formControlName="subscribe"/><span>Subscribe to our newsletter</span></label>
+      </div>
+    <button type="submit" class="btn btn-general-dakts bg-my-color col-12">
+      Sign In
+    </button>
+  </form>

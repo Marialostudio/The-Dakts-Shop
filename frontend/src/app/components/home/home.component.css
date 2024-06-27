@@ -1,7 +1,7 @@
 .mainhome {
     margin-top: -100px;
-    padding-left: 0.9rem;
-    padding-right: 0.9rem;
+    /* padding-left: 0.9rem;
+    padding-right: 0.9rem; */
     background-image: url(/Textura-02.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -68,7 +68,7 @@ h4 b {
 .lovers-section{
     background-color: #5d472f;
     padding: 7rem 0 0 0;
-    margin-top: 0.25rem;
+    margin-top: 0.2rem;
 }
 .products-section{
     background-color: #5d472f;
@@ -256,6 +256,9 @@ h4 b {
         font-size: 0.8rem;
         line-height: 1.2rem;
         letter-spacing: 0.02rem;
+    }
+    .main-products {
+        display: none;
     }
     .card{
         margin: 0 0.5rem;
@@ -517,6 +520,9 @@ h4 b {
 }
 
 @media screen and (min-width: 576px){
+    .carousel{
+        display: none;
+    }
     .carousel-inner{
         display: flex;
     }

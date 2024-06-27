@@ -4,13 +4,14 @@ import DaktsUsersModel from "../models/usermodel.js";
 const DaktsUsersController = {
     createUser: async (solicitud, respuesta) => {
       try {
-        const { firstName, lastName, emailAddress, password } = solicitud.body;
+        const { firstName, lastName, emailAddress, password, subscribe } = solicitud.body;
         const passwordProtected = await bcrypt.hash(password, 10);
         const newUser = new DaktsUsersModel({
           firstName,
           lastName,
           emailAddress,
           password: passwordProtected,
+          subscribe,
         });
         const userCreated = await newUser.save();
         if (userCreated._id) {

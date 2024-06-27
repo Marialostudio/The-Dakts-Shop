@@ -1,0 +1,41 @@
+.inputfield label{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: #5d472f;
+}
+.form-control{
+    border-radius: 3px;
+    background-color: #c39964;
+    border: none;
+    padding: 0.700rem 0.75rem;
+}
+.inputcheckbox label{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: #5d472f;
+}
+.inputcheckbox input{
+    margin-right: 1.4rem;
+    border-radius: 0rem;
+}
+.btn-general-dakts{
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #5d472f;
+    width: 50%;
+    border-radius: 99rem;
+    padding: 0.800rem;
+    margin-top: 1.2rem;
+    color: white;
+}
+.btn-general-dakts:hover{
+    background-color: #c76b37;
+    transition: .15s ease-in-out;
+}
+.form-control:hover{
+    background-color: burlywood;
+    transition: .15s ease-in-out;
+}
