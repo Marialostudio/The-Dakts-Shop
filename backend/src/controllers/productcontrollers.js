@@ -22,6 +22,7 @@ const DaktsProductsController = {
             } else {
                 const newProduct = new DaktsProductModel({
                     name: solicitud.body.name,
+                    subhead: solicitud.body.subhead,
                     category: solicitud.body.category,
                     description: solicitud.body.description,
                     features: {

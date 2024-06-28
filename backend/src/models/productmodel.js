@@ -2,6 +2,7 @@ import { Schema, model } from "mongoose";
 
 const DaktsProductSchema = new Schema({
         name: {type: String, required: true},
+        subhead: {type: String, required: true},
         category: {type: String, required: true},
         description: {type: String, required: true},
         features: {

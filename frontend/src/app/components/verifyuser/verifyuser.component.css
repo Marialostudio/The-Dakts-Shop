@@ -1,0 +1,84 @@
+.mainverify {
+    margin-top: -100px;
+    /* padding-left: 0.9rem;
+    padding-right: 0.9rem; */
+    background-image: url(/Textura-02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.welcome-user-section {
+    background-color: #ffcfa7;
+    padding: 15rem 2rem;
+}
+.clearfix{
+    height: 2rem;
+}
+h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-style: normal;
+    color: #5d472f;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    font-style: normal;
+    color: #5d472f;
+    letter-spacing: 0.03rem;
+}
+.btn-primary{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff852d;
+    border-color: #ff852d;
+    border-radius: 10rem;
+}
+.btn-primary:hover{
+    background-color: #c76b37;
+    border-color: #c76b37;
+}
+.btn{
+    padding: 0.9rem 1.5rem;
+}
+.btn span{
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .3s cubic-bezier(0,.5,.5,1);
+    -o-transition: all .3s cubic-bezier(0,.5,.5,1);
+    transition: all .3s cubic-bezier(0,.5,.5,1);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media (max-width: 575.98px) {
+    h3 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h3 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}

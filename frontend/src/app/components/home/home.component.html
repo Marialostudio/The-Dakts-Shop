@@ -35,37 +35,11 @@
     </section>
     <section class="products-section">
         <div class="container-fluid">
+            @if (products.length > 0) {
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="card" style="background-image: url(/frame-pistachio-butter.png);">
-                        <div class="img-wrapper">
-                            <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Pistachio butter stuffed dates</h5>
-                          <h6 class="card-text">covered with dark chocolate</h6>
-                          <p class="carousel-price">$3,50</p>
-                          <a href="#" class="btn btn-primary">Buy now</a>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card" style="background-image: url(/frame-pistachio-butter.png);">
-                        <div class="img-wrapper">
-                            <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Peanut butter stuffed dates</h5>
-                          <h6 class="card-text">covered with dark chocolate</h6>
-                          <p class="carousel-price">$3,50</p>
-                          <a href="#" class="btn btn-primary">
-                            <span>Buy now</span></a>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card" style="background-image: url(/frame-pistachio-butter.png);">
+                    <div class="card">
                         <div class="img-wrapper">
                             <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
                         </div>
@@ -77,6 +51,35 @@
                         </div>
                       </div>
                   </div>
+                  @for (product of products; track $index){
+                  <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="http://localhost:3000/images/{{ product.image }}" alt="{{ product.name }} {{ product.subhead }}" width="100%" height="auto">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">{{ product.name }}</h5>
+                          <h6 class="card-text">{{ product.subhead }}</h6>
+                          <p class="carousel-price">${{ product.price }}</p>
+                          <a href="#" class="btn btn-primary">
+                            <span>Buy now</span></a>
+                        </div>
+                      </div>
+                  </div>
+                    }
+                  <!-- <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Hazelnut butter stuffed dates</h5>
+                          <h6 class="card-text">covered with dark chocolate</h6>
+                          <p class="carousel-price">$3,50</p>
+                          <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                      </div>
+                  </div> -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -91,7 +94,7 @@
             <div class="main-products">
                 <div class="carousel-inner">
                   <div class="carousel-item">
-                    <div class="card" style="background-image: url(/frame-pistachio-butter.png);">
+                    <div class="card">
                         <div class="img-wrapper">
                             <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
                         </div>
@@ -104,9 +107,9 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card" style="background-image: url(/frame-pistachio-butter.png);">
+                    <div class="card">
                         <div class="img-wrapper">
-                            <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
+                            <img src="/peanut-butter-nut.png" alt="..." width="100%" height="auto">
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">Peanut butter stuffed dates</h5>
@@ -118,7 +121,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card" style="background-image: url(/frame-pistachio-butter.png);">
+                    <div class="card">
                         <div class="img-wrapper">
                             <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
                         </div>
@@ -141,6 +144,7 @@
                 </div>
 
             </div>
+            }
         </div>
     </section>
     <section class="dishdakts">

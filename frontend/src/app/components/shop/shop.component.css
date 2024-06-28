@@ -66,12 +66,18 @@ h1 {
     transition: .35s ease-in-out;
 }
 .card{
-    background: none;
+    background-image: url(/frame-pistachio-butter.png);
+    background-color: #ffffff00;
     border: none;
     margin: 0rem;
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: top center;
+    transition: .25s ease-in-out;
+}
+.card:hover{
+    background-image: url(/frame-pistachio-butter-hover.png);
+    transition: .25s ease-in-out;
 }
 .card-body{
     padding: 1rem 0 1rem 4rem;
@@ -85,7 +91,7 @@ h1 {
 }
 .card-text{
     font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
     font-style: normal;
     color: white;
@@ -211,7 +217,7 @@ h1 {
         padding: 10rem 2rem 6rem 2rem;
     }
     .card-body{
-        padding: 1rem 0 1rem 2rem;
+        padding: 1rem 0 1rem 4rem;
     }
     .card-body h5{
         font-size: 1.4rem;
@@ -234,7 +240,7 @@ h1 {
         flex: 0 0 calc(100%/2);
     }
     .img-wrapper{
-        height: 45vw;
+        height: 30vw !important;
     }
     .centerbadge{
         margin-top: 0.5rem;
@@ -266,10 +272,10 @@ h1 {
         font-size: 0.9rem;
     }
     .img-wrapper{
-        height: 30vw;
+        height: 32vw !important;
     }
     .card-body{
-        padding: 1rem 0 1rem 3rem;
+        padding: 1rem 0 1rem 5rem;
     }
     .card-body h5{
         font-size: 1.6rem;
@@ -307,13 +313,13 @@ h1 {
         height: 30vw;
     }
     .card-body{
-        padding: 1rem 0 1rem 4rem;
+        padding: 1rem 0 1rem 3rem;
     }
     .card-body h5{
-        font-size: 2.1rem;
+        font-size: 1.6rem;
     }
     .card-text{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .carousel-price{
         margin: 1.5rem 0;
@@ -340,16 +346,16 @@ h1 {
         display: none;
     }
     .img-wrapper{
-        height: 23vw;
+        height: 15vw;
     }
 }
 
 @media screen and (min-width: 1200px){
     .card-body{
-        padding: 1rem 0 1rem 6rem;
+        padding: 1rem 0 1rem 4rem;
     }
     .card-body h5{
-        font-size: 2.4rem;
+        font-size: 1.8rem;
     }
     
 }

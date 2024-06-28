@@ -108,12 +108,18 @@ h4 b {
     transition: .35s ease-in-out;
 }
 .card{
-    background: none;
+    background-image: url(/frame-pistachio-butter.png);
+    background-color: #ffffff00;
     border: none;
-    margin: 0 1rem;
-    background-size: contain;
+    margin: 0rem;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: top center;
+    transition: .25s ease-in-out;
+}
+.card:hover{
+    background-image: url(/frame-pistachio-butter-hover.png);
+    transition: .25s ease-in-out;
 }
 .card-body{
     padding: 1rem 0 1rem 4rem;
