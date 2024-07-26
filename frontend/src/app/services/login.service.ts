@@ -13,7 +13,7 @@ export class LoginService {
   toastrService = inject(ToastrService);
   router = inject(Router);
 
-  API_URL = 'http://localhost:3000/login';
+  API_URL = 'http://3.22.194.43:3000/login';
 
   login(credential: Credential){
     return this.httpClient.post(this.API_URL, credential);
