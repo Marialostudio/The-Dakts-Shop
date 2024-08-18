@@ -1,5 +1,5 @@
 .daktsfooter{
-    background-image: url(/Textura-02.jpg);
+    background-image: url(/Textura-03.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -7,16 +7,16 @@
     padding-top: 0.02rem;
 }
 .footer{
-    background-color: #c76b37;
-    padding: 5rem 2rem;
+    background-color: #01605a;
+    padding: 5rem 2rem 2rem 2rem;
     margin-top: 0.2rem;
 }
 h3{
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     font-style: normal;
-    color: #ffcfa7;
+    color: #ff852d;
 }
 h4 {
     font-family: "Ubuntu", sans-serif;
@@ -38,6 +38,29 @@ p {
 }
 .alignend{
     align-content: end;
+}
+.copyright {
+    background-image: url(/nutstexture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 0 1rem 0;
+}
+.copyright p{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.7rem;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+}
+.copyright a {
+    font-weight: 600;
+    text-decoration: none;
+    color:#ff852d;
+}
+.copyright a:hover {
+    color:#ffcfa7;
 }
 
 @media (max-width: 575.98px) {

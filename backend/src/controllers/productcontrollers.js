@@ -37,7 +37,7 @@ const DaktsProductsController = {
                     weight: solicitud.body.weight,
                     availables: solicitud.body.availables,
                     inStock: solicitud.body.inStock,
-                    image: solicitud.file.filename,
+                    image: solicitud.file.filename, 
                   });
                   const productCreated = await newProduct.save();
                   if (productCreated._id) {

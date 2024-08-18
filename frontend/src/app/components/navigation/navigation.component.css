@@ -21,16 +21,28 @@
     float: inline-end;
     padding-left: 3rem !important;
 }
+nav {
+    transition: 0.7s;
+}
+#navspace{
+    transition: padding 0.3s ease;
+}
 .navbar-nav li{
     display: inline;
-    margin-right: 4rem;
+    margin-right: 3rem;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-style: normal;
 }
 .navbar-nav {
     border-bottom: solid 1px white;
-    padding: 0.7rem 0 !important;
+}
+.down{
+    backdrop-filter: blur(7px);
+}
+.down a img{
+    width: 150px;
+    transition: 0.5s;
 }
 .nav-link{
     color: white;
@@ -42,7 +54,7 @@
     color: white;
 }
 .navbar-brand {
-    margin: 0.7rem 3rem;
+    margin: 0rem 3rem;
 }
 .navbar-toggler {
     margin: 0.5rem 3rem 0 0;

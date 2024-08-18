@@ -1,10 +1,7 @@
 <main class="mainhome">
     <section class="hero-section">
         <div class="container-fluid text-center">
-            <h1>Better food better life.
-                <br>
-                Better life better future!
-            </h1>
+            
         </div>
     </section>
     <section class="signdakts">
@@ -21,6 +18,15 @@
             </div>
         </div>
     </section>
+    <section id="parallax-section" class="parallax-container">
+        <div id="parallax" class="parallax-background">
+            <div class="container-fluid parallax-content text-center">
+                <h4>Believe in the power of conscious consumption!</h4>
+                <h1>Boost your energy!</h1>
+            </div>
+        </div>
+    </section>
+
     <section class="lovers-section">
         <div class="container">
             <div class="row justify-content-md-center chlovers">
@@ -33,6 +39,9 @@
             </div>
         </div>
     </section>
+
+    
+
     <section class="products-section">
         <div class="container-fluid">
             @if (products.length > 0) {
@@ -55,7 +64,7 @@
                   <div class="carousel-item">
                     <div class="card">
                         <div class="img-wrapper">
-                            <img src="http://localhost:3000/images/{{ product.image }}" alt="{{ product.name }} {{ product.subhead }}" width="100%" height="auto">
+                            <img src="http://localhost:3000/images/{{ product.image }}" alt="{{ product.name }} {{ product.subhead }}" width="90%" height="auto">
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">{{ product.name }}</h5>
@@ -92,48 +101,21 @@
             </div>
 
             <div class="main-products">
-                <div class="carousel-inner">
-                  <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Pistachio butter stuffed dates</h5>
-                          <h6 class="card-text">covered with dark chocolate</h6>
-                          <p class="carousel-price">$3,50</p>
-                          <a href="#" class="btn btn-primary">Buy now</a>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="/peanut-butter-nut.png" alt="..." width="100%" height="auto">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Peanut butter stuffed dates</h5>
-                          <h6 class="card-text">covered with dark chocolate</h6>
-                          <p class="carousel-price">$3,50</p>
-                          <a href="#" class="btn btn-primary">
-                            <span>Buy now</span></a>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="/pistachio-butter-nut.png" alt="..." width="100%" height="auto">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Hazelnut butter stuffed dates</h5>
-                          <h6 class="card-text">covered with dark chocolate</h6>
-                          <p class="carousel-price">$3,50</p>
-                          <a href="#" class="btn btn-primary">Buy now</a>
-                        </div>
-                      </div>
-                  </div>
-                </div>
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-2 g-sm-2 g-md-2 g-lg-3">
+                        @for (product of products; track $index){
+                            <div class="col card">
+                                <div class="img-wrapper">
+                                    <img src="http://localhost:3000/images/{{ product.image }}" alt="{{ product.name }} {{ product.subhead }}" width="92%" height="auto">
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">{{ product.name }}</h5>
+                                  <h6 class="card-text">{{ product.subhead }}</h6>
+                                  <p class="carousel-price">${{ product.price }}</p>
+                                  <a href="#" class="btn btn-primary">Buy now</a>
+                                </div>
+                              </div>
+                        }
+                    </div>
             </div>
 
             <div class="container">
@@ -147,11 +129,13 @@
             }
         </div>
     </section>
+
+    
     <section class="dishdakts">
         <div class="container">
             <div class="row rightdish">
                 <div class="col-lg-6 col-md-7 col-sm-8 col-12">
-                    <img class="d-block dishnuts" src="/dishofnuts.webp" alt="dish nuts">
+                    <img class="d-block dishnuts" src="/dakts-mix-dates-shadow.png" alt="dish nuts">
                 </div>
             </div>  
         </div>
@@ -160,7 +144,7 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-lg-5 col-md-5 col-sm-6 text-center">
-                    <img class="lifestylepics" src="/Photograpy_style.jpg" alt="women enjoying nuts">
+                    <img class="lifestylepics" src="/dakts-location-1.jpg" alt="women enjoying nuts">
                 </div>
                 <div class="col-lg-4 col-md-5 col-sm-6 brownshape">
                     <div class="infobox">
@@ -185,6 +169,25 @@
                     <div class="clearfix"></div>
                     <h4><b>AT DAKTS,</b> WE BELIEVE IN HONORING THE ROOTS OF OUR INGREDIENTS</h4>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="parallax-section-2" class="parallax-container">
+        <div id="parallax-2" class="parallax-background-2">
+            <div class="container-fluid parallax-content-2 text-center">
+                <h2>Embrace the organic revolution</h2>
+                <div class="clearfix"></div>
+                <p>Each delectable DAKTS creation is crafted using only the finest, ethically sourced ingredients, because we believe that treating yourself shouldn't come at the expense of the planet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container text-center">
+            <div class="col-lg-9 col-md-11 col-sm-12 mx-auto">
+                <h3>So, are you ready to awaken your senses and nourish your soul with DAKTS?</h3>
+                <div class="clearfix"></div>
+                <p>Savor the exquisite flavors bite to bite and reconnect with the essence of who you are – a steward of the earth, fueled by passion, discipline, and a deep reverence for our shared origins.</p>
             </div>
         </div>
     </section>

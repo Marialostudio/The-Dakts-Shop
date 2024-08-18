@@ -9,11 +9,11 @@
     background-repeat: no-repeat;
 }
 .hero-section{
-    background-image: url(/Photostudio_style_2.jpg);
+    background-image: url(/dakts-escenario-1-1.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 15rem 0;
+    padding: 20rem 0;
 }
 h1 {
     font-family: "Ubuntu", sans-serif;
@@ -31,19 +31,88 @@ p {
     letter-spacing: 0.03rem;
 }
 .welcome-section{
-    background-color: #ff852d;
+    background-color: #ffcfa7;
     padding: 9rem 0 7rem 0;
     margin-top: -3rem;
 }
 .signdakts{
     margin-top: -3rem;
 }
+.slogan-section{
+    padding: 15rem 0;
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+.parallax-background {
+    background-image: url(/dakts-girl-snack.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -110px;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Más altura para un mejor efecto parallax */
+    z-index: 0;
+    will-change: transform;
+  }
+.parallax-background-2 {
+    background-image: url(/dakts-location-3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Más altura para un mejor efecto parallax */
+    z-index: 0;
+    will-change: transform;
+  }
+.parallax-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 15rem 0;
+  }
+  .parallax-content-2 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 15rem 10rem;
+    background-color: #00000030;
+  }
+.parallax-content-2 p{
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+.cta-section{
+    background-color: #ffcfa7;
+    padding: 9rem 0 7rem 0;
+    margin-top: -3rem;
+    color:#01605a;
+}
+.cta-section h3{
+    color:#01605a;
+}
+.cta-section p {
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color:#01605a;
+}
+
 h2 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-size: 3.6rem;
     font-style: normal;
-    color: white;
 }
 h3 {
     font-family: "Ubuntu", sans-serif;
@@ -57,17 +126,29 @@ h4 {
     font-weight: 400;
     font-size: 1rem;
     font-style: normal;
-    color: white;
+    text-transform: uppercase;
 }
 h4 b {
     font-weight: 700;
+}
+.welcome-section h2 {
+    color: #01605a;
+}
+.welcome-section h4 {
+    color: #01605a;
+}
+.crafted-section h2 {
+    color: white;
+}
+.manifiesto-section h4 {
+    color: white;
 }
 .clearfix{
     height: 2rem;
 }
 .lovers-section{
     background-color: #5d472f;
-    padding: 7rem 0 0 0;
+    padding: 7rem 0 3rem 0;
     margin-top: 0.2rem;
 }
 .products-section{
@@ -122,7 +203,7 @@ h4 b {
     transition: .25s ease-in-out;
 }
 .card-body{
-    padding: 1rem 0 1rem 4rem;
+    padding: 1rem 2rem 1rem 4rem;
 }
 .card-body h5 {
     font-family: "Ubuntu", sans-serif;
@@ -133,7 +214,7 @@ h4 b {
 }
 .card-text{
     font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     font-style: normal;
     color: white;
@@ -145,7 +226,7 @@ h4 b {
     font-size: 1.2rem;
     font-style: normal;
     color: white;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 .btn-primary{
     font-family: "IBM Plex Mono", monospace;
@@ -200,7 +281,7 @@ h4 b {
     text-align: -webkit-right;
 }
 .dishdakts{
-    margin-top: -8rem;
+    margin-top: -5rem;
 }
 .rightdish{
     justify-content: right !important;
@@ -211,7 +292,7 @@ h4 b {
 .crafted-section{
     background-color: #c76b37;
     padding: 12rem 0 0 0;
-    margin-top: -8.9rem;
+    margin-top: -14.1rem;
 }
 .lifestylepics{
     width: 90%;
@@ -270,16 +351,16 @@ h4 b {
         margin: 0 0.5rem;
     }
     .card-body h5{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .card-text{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .centerbadge img{
         width: 160px;
     }
     .dishdakts{
-        margin-top: -4.5rem;
+        margin-top: -2.5rem;
         padding: 0 1rem;
     }
     .dishnuts{
@@ -287,11 +368,11 @@ h4 b {
         float: right;
     }
     .crafted-section{
-        margin-top: -2rem;
+        margin-top: -4.9rem;
         padding: 8rem 1rem 6rem 1rem;
     }
     .infobox{
-        padding: 8rem 1rem 0 6rem;
+        padding: 8rem 3rem 0 6rem;
     }
     .lifestylepics{
         width: 80%;
@@ -343,7 +424,7 @@ h4 b {
         padding: 0 0 5rem 0;
     }
     .card{
-        margin: 0 0.7rem;
+        margin: 0rem;
     }
     .card-body{
         padding: 1rem 0 1rem 2rem;
@@ -369,7 +450,7 @@ h4 b {
         flex: 0 0 calc(100%/2);
     }
     .img-wrapper{
-        height: 45vw;
+        height: 40vw !important;
     }
     .centerbadge{
         margin-top: 0.5rem;
@@ -378,10 +459,10 @@ h4 b {
         width: 180px;
     }
     .dishdakts{
-        margin-top: -5rem;
+        margin-top: -3rem;
     }
     .crafted-section{
-        margin-top: -3.8rem;
+        margin-top: -7rem;
         padding: 9rem 0 0 0;
     }
     .infobox{
@@ -394,6 +475,9 @@ h4 b {
     .manifiesto-section{
         padding: 12rem 2rem 3rem 1rem;
     }
+    .parallax-content-2 {
+        padding: 16rem 4rem;
+      }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -421,7 +505,7 @@ h4 b {
         padding: 6rem 0 4rem 0;
     }
     .img-wrapper{
-        height: 30vw;
+        height: 45vw !important;
     }
     .card-body{
         padding: 1rem 0 1rem 3rem;
@@ -439,10 +523,10 @@ h4 b {
         font-size: 0.9rem;
     }
     .dishdakts{
-        margin-top: -6rem;
+        margin-top: -4rem;
     }
     .crafted-section{
-        margin-top: -4.4rem;
+        margin-top: -7.8rem;
         padding: 9rem 0 0 0;
     }
     .infobox{
@@ -455,6 +539,9 @@ h4 b {
     .manifiesto-section{
         padding: 14rem 0 4rem 0;
     }
+    .parallax-content-2 {
+        padding: 15rem 5rem;
+      }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -476,10 +563,10 @@ h4 b {
         height: 30vw;
     }
     .card-body{
-        padding: 1rem 0 1rem 4rem;
+        padding: 1rem;
     }
     .card-body h5{
-        font-size: 2.1rem;
+        font-size: 1.4rem;
     }
     .card-text{
         font-size: 1.1rem;
@@ -488,10 +575,10 @@ h4 b {
         margin: 1.5rem 0;
     }
     .dishdakts{
-        margin-top: -7rem;
+        margin-top: -5rem;
     }
     .crafted-section{
-        margin-top: -5rem;
+        margin-top: -8.7rem;
         padding: 10rem 0 0 0;
     }
     .infobox{
@@ -514,7 +601,7 @@ h4 b {
         font-size: 2.8rem;
     }
     .crafted-section{
-        margin-top: -6.4rem;
+        margin-top: -11.4rem;
     }
     .infobox{
         padding: 8rem 0 0 4rem;
@@ -544,10 +631,10 @@ h4 b {
 
 @media screen and (min-width: 1200px){
     .card-body{
-        padding: 1rem 0 1rem 6rem;
+        padding: 1rem 2rem;
     }
     .card-body h5{
-        font-size: 2.4rem;
+        font-size: 1.8rem;
     }
     
 }

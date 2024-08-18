@@ -15,7 +15,7 @@ export class CreateaccountService {
   toastrService = inject(ToastrService);
   router = inject(Router);
 
-  API_URL = 'http://3.22.194.43:3000/users';
+  API_URL = 'http://localhost:4200/users';
 
   createAccount(newaccount: Newaccount){
     console.log(newaccount);
