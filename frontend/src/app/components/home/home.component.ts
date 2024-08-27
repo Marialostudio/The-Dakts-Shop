@@ -1,4 +1,4 @@
-import { Component, inject, HostListener, ElementRef } from '@angular/core';
+import { Component, inject, HostListener, Renderer2, ElementRef } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { ShopService } from "../../services/shop.service";
 
@@ -27,24 +27,54 @@ export class HomeComponent {
     });
   }
 
-  constructor(private el: ElementRef) {}
+  initialZoomLevel = 170;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const parallaxSection = this.el.nativeElement.querySelector('#parallax-section', '#parallax-section-2');
-    const parallaxElement = this.el.nativeElement.querySelector('#parallax', '#parallax-2');
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: Event): void {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+
+    // Parallax effect
+    this.applyParallaxEffect(scrollTop);
+
+    // Efecto slide in
+    this.checkSlideInEffect();
+  }
+
+
+  applyParallaxEffect(scrollTop: number): void {
+    const parallaxSection = this.el.nativeElement.querySelector('#parallax-section');
+    const parallaxElement = this.el.nativeElement.querySelector('#parallax');
     const sectionTop = parallaxSection.offsetTop;
-    const scrollY = window.scrollY;
     const windowHeight = window.innerHeight;
-    const parallaxHeight = parallaxElement.clientHeight;
 
     // Calculate the distance scrolled within the section
-    const scrolledWithinSection = scrollY - sectionTop + windowHeight;
-    
+    const scrolledWithinSection = scrollTop - sectionTop + windowHeight;
+
     // Apply the parallax effect only when the section is in view
-    if (scrollY >= sectionTop - windowHeight && scrollY <= sectionTop + parallaxSection.clientHeight) {
-      parallaxElement.style.transform = 'translateY(' + (scrolledWithinSection * 0.2) + 'px)';
+    if (scrollTop >= sectionTop - windowHeight && scrollTop <= sectionTop + parallaxSection.clientHeight) {
+      this.renderer.setStyle(
+        parallaxElement,
+        'transform',
+        `translateY(${scrolledWithinSection * 0.2}px)`
+      );
     }
+  }
+
+  checkSlideInEffect(): void {
+    const slideElements = this.el.nativeElement.querySelectorAll('.slide-in');
+    const windowHeight = window.innerHeight;
+
+    slideElements.forEach((element: HTMLElement) => {
+      const rect = element.getBoundingClientRect();
+      const isVisible = rect.top < windowHeight && rect.bottom > 0;
+
+      if (isVisible) {
+        this.renderer.addClass(element, 'active');
+      }
+    });
   }
 
   

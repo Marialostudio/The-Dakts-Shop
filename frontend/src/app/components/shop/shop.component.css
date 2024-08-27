@@ -2,24 +2,42 @@
     margin-top: -100px;
     /* padding-left: 0.9rem;
     padding-right: 0.9rem; */
-    background-image: url(/Textura-02.jpg);
+    background-image: url(/textures/Textura-02.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.hero-section {
-    background-image: url(/Photostudio_style_3.jpg);
+.hero-section{
+    background-image: url(/dakts-escenario-5.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 12rem 2rem 9rem 2rem;
+}
+.overlay {
+    background-color: #1e110454;
+    padding: 15rem 2rem 3rem;
 }
 h1 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-size: 4.2rem;
     font-style: normal;
+    color: white;
+}
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    font-style: normal;
+    color: white;
+}
+h4 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
     color: white;
 }
 .signdakts{
@@ -30,35 +48,52 @@ h1 {
 }
 .products-section{
     background-color: #5d472f;
-    padding: 9rem 0 7rem 0;
-    margin-top: -3rem;
+    padding: 9rem 0 5rem 0;
+    margin-top: 0.2rem;
 }
-.chlovers{
-    align-items: center;
+.features-section{
+    background-color: #5d472f;
+    padding: 1rem 0 10rem 0;
 }
-.chlovers h2{
-    color: #ffcfa7;
+.square {
+    background-color: #ffffff0a;
+    border: solid 1px;
+    border-color: #ffffff1a;
+    height: 150px;
+    padding: 1.5rem;
 }
-.chlovers p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #ffcfa7;
-    letter-spacing: 0.03rem;
+.card-icon-top{
+    width: 50%;
+    align-self: center;
 }
-.nutshape {
-    background-image: url(/nutshape.png);
-    background-position: 10% 10%;
-    background-size: contain;
-    background-repeat: no-repeat;
+.card-data{
+    padding: 1rem 0 0 0;
+    text-align: center;
 }
-.pistachio-butter{
-    background-image: url(/frame-pistachio-butter.png);
+.card-data h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .9rem;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: #ffe398;
+}
+.card-body{
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: start;
+}
+.card-body h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #ff852d;
+}
+.peanut-butter{
+    background-image: url(/frame-peanut-butter.png);
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
 }
-.pistachio-butter:hover{
+.peanut-butter:hover{
     background-image: url(/frame-pistachio-butter-hover.png);
     background-position: 50% 50%;
     background-size: contain;
@@ -66,35 +101,36 @@ h1 {
     transition: .35s ease-in-out;
 }
 .card{
-    background-image: url(/frame-pistachio-butter.png);
+    background-image: url(/frames/frame-peanut-butter.png);
     background-color: #ffffff00;
     border: none;
     margin: 0rem;
     background-size: 90%;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
     transition: .25s ease-in-out;
 }
 .card:hover{
-    background-image: url(/frame-pistachio-butter-hover.png);
+    background-image: url(/frames/frame-peanut-butter-hover.png);
     transition: .25s ease-in-out;
 }
 .card-body{
-    padding: 1rem 0 1rem 4rem;
+    padding: 0rem 0 1rem 4rem;
 }
 .card-body h5 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-style: normal;
-    color: white;
+    color: #c76b37;
+    margin-bottom: 0.1rem;
 }
 .card-text{
     font-family: "Roboto", sans-serif;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    color: white;
+    color: #c76b37;
     letter-spacing: 0.02rem;
 }
 .carousel-price{
@@ -102,8 +138,8 @@ h1 {
     font-weight: 300;
     font-size: 1.2rem;
     font-style: normal;
-    color: white;
-    margin: 2rem 0;
+    color: #c76b37;
+    margin: 1rem 0 1.5rem 0;
 }
 .btn-primary{
     font-family: "IBM Plex Mono", monospace;
@@ -145,20 +181,68 @@ h1 {
 .carousel-inner{
     padding: 1rem;
 }
-.centerbadge{
-    margin-top: 1rem;
-    text-align: -webkit-right;
+.cta-section{
+    background-color: #ffcfa7;
+    padding: 5rem 0 4rem 0;
+    margin-top: -3rem;
+    color:#01605a;
 }
-.dishdakts{
-    margin-top: -8rem;
+.cta-section h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-style: normal;
+    color:#01605a;
 }
-.rightdish{
-    justify-content: right !important;
-}
-.dishnuts{
-    width: 100%;
+.cta-section p {
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color:#01605a;
 }
 
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+#parallax{
+    background-color: #5d472f30;
+}
+  
+.parallax-background {
+    background-image: url(/dakts-location-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    position: absolute;
+    top: -130px;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Más altura para un mejor efecto parallax */
+    z-index: 0;
+    will-change: transform;
+    align-content: space-around;
+  }
+  .parallax-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+
+  .slide-in {
+    opacity: 0;
+    transform: translateY(100px); /* O ajusta según la dirección del slide */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  }
+
+  .slide-in.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 @media (max-width: 575.98px) {
     h1 {
@@ -182,16 +266,15 @@ h1 {
     .card-text{
         font-size: 1.1rem;
     }
-    .centerbadge img{
-        width: 160px;
+    .features-section{
+        padding: 1rem 3rem 10rem 3rem;
     }
-    .dishdakts{
-        margin-top: -4.5rem;
-        padding: 0 1rem;
+    .square {
+        height: 150px;
+        align-content: center;
     }
-    .dishnuts{
-        width: 250px;
-        float: right;
+    .card-data h4{
+        font-size: .7rem;
     }
 }
 
@@ -213,11 +296,8 @@ h1 {
     h4 {
         font-size: 0.8rem;
     }
-    .hero-section{
-        padding: 10rem 2rem 6rem 2rem;
-    }
     .card-body{
-        padding: 1rem 0 1rem 4rem;
+        padding: 0rem 0 1rem 5rem;
     }
     .card-body h5{
         font-size: 1.4rem;
@@ -226,7 +306,7 @@ h1 {
         font-size: 0.9rem;
     }
     .carousel-price{
-        margin: 0.9rem 0;
+        margin: 0.9rem 0 2rem;
     }
     .btn-primary{
         font-size: 0.8rem;
@@ -240,7 +320,7 @@ h1 {
         flex: 0 0 calc(100%/2);
     }
     .img-wrapper{
-        height: 30vw !important;
+        height: 36vw;
     }
     .centerbadge{
         margin-top: 0.5rem;
@@ -250,6 +330,16 @@ h1 {
     }
     .dishdakts{
         margin-top: -5rem;
+    }
+    .features-section{
+        padding: 1rem 4rem 10rem 4rem;
+    }
+    .square {
+        height: 180px;
+        align-content: center;
+    }
+    .card-data h4{
+        font-size: .8rem;
     }
 }
 
@@ -272,10 +362,10 @@ h1 {
         font-size: 0.9rem;
     }
     .img-wrapper{
-        height: 32vw !important;
+        height: 40vw;
     }
     .card-body{
-        padding: 1rem 0 1rem 5rem;
+        padding: 0rem 0 1rem 6rem;
     }
     .card-body h5{
         font-size: 1.6rem;
@@ -284,13 +374,19 @@ h1 {
         font-size: 1rem;
     }
     .carousel-price{
-        margin: 1rem 0;
+        margin: 1rem 0 3rem;
     }
     .btn-primary{
         font-size: 0.9rem;
     }
-    .dishdakts{
-        margin-top: -6rem;
+    .square {
+        padding: 1rem;
+    }
+    .card-icon-top{
+        width: 70%;
+    }
+    .card-data h4{
+        font-size: .7rem;
     }
 }
 
@@ -310,22 +406,19 @@ h1 {
         letter-spacing: 0.02rem;
     }
     .img-wrapper{
-        height: 30vw;
+        height: 20vw;
     }
     .card-body{
-        padding: 1rem 0 1rem 3rem;
+        padding: 0rem 0 1rem 3rem;
     }
     .card-body h5{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     .card-text{
         font-size: 1rem;
     }
     .carousel-price{
-        margin: 1.5rem 0;
-    }
-    .dishdakts{
-        margin-top: -7rem;
+        margin: 1rem 0 2rem;
     }
 }
 
@@ -339,23 +432,38 @@ h1 {
     h3 {
         font-size: 2.8rem;
     }
+    .img-wrapper{
+        height: 21vw;
+    }
+    .features-section{
+        padding: 1rem 5rem 10rem 5rem;
+    }
+    .square {
+        height: 170px;
+    }
 }
 
 @media screen and (min-width: 576px) {
     .carousel{
         display: none;
     }
-    .img-wrapper{
-        height: 15vw;
-    }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1400px){
+    .img-wrapper{
+        height: 23vw;
+    }
     .card-body{
-        padding: 1rem 0 1rem 4rem;
+        padding: 0rem 0 1rem 4rem;
     }
     .card-body h5{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+    }
+    .features-section{
+        padding: 1rem 7rem 10rem 7rem;
+    }
+    .square {
+        height: 180px;
     }
     
 }

@@ -1,0 +1,269 @@
+.mainhome {
+    margin-top: -100px;
+    /* padding-left: 0.9rem;
+    padding-right: 0.9rem; */
+    background-image: url(/textures/Textura-02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-section{
+    background-image: url(/dakts-location-3.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15rem 2rem 3rem;
+}
+h4 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: white;
+}
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    font-style: normal;
+    color: white;
+}
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    font-style: normal;
+    color: white;
+}
+.intro-section{
+    background-color: #ffe398;
+    padding: 9rem 2rem 7rem 2rem;
+    margin-top: 0.3rem;
+    color: #5d472f;
+}
+.intro-section h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #5d472f;
+}
+.intro-section h4 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: #5d472f;
+}
+.about-section{
+    background-color: #ffe398;
+    padding: 1rem 2rem 10rem 2rem;
+    color: white;
+}
+.about-image{
+    background-image: url(/dakts-location-8.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-size 0.9s ease-out;
+}
+.brownshape{
+    background-color: #c76b37;
+    padding: 0;
+}
+.infobox{
+    background-image: url(/bg--nutshape.webp);
+    background-size: 70%;
+    background-position-x: -80px;
+    background-position-y: 30px;
+    background-repeat: no-repeat;
+    padding: 4rem;
+}
+.infobox h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+.infobox p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 0.03rem;
+}
+.signdakts{
+    margin-top: -3rem;
+}
+.manifesto{
+    background-color: #01605a;
+    margin-top: -48px;
+    padding: 10rem 2rem;
+}
+.manifesto h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #ffcfa7;
+    padding-bottom: 1rem;
+}
+.card {
+    background-color: #ffffff0a;
+    border-color: #ffffff1a;
+    height: 400px;
+}
+.card-img-top{
+    width: 50%;
+    align-self: center;
+}
+.card-body{
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: start;
+}
+.card-body h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #ff852d;
+}
+.card-body p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: white;
+    letter-spacing: 0.03rem;
+}
+.cta-section{
+    background-color: #ffcfa7;
+    padding: 5rem 0 4rem 0;
+    margin-top: 0.2rem;
+    color:#01605a;
+}
+.cta-section h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-style: normal;
+    color:#01605a;
+}
+.cta-section p {
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color:#01605a;
+}
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+#parallax{
+    background-color: #5d472f30;
+}
+  
+.parallax-background {
+    background-image: url(/dakts-escenario-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    position: absolute;
+    top: -130px;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Más altura para un mejor efecto parallax */
+    z-index: 0;
+    will-change: transform;
+    align-content: space-around;
+  }
+  .parallax-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+
+  .slide-in {
+    opacity: 0;
+    transform: translateY(100px); /* O ajusta según la dirección del slide */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  }
+
+  .slide-in.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+@media (max-width: 575.98px) {
+    .heightimage{
+        height: 300px;
+        width: auto;
+    }
+    .infobox{
+        padding: 3rem;
+    }
+    .infobox h2 {
+        font-size: 2rem;
+    }
+    .infobox p {
+        font-size: 0.8rem;
+    }
+    .cta-section h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .infobox{
+        padding: 2rem;
+    }
+    .infobox h2 {
+        font-size: 1.8rem;
+    }
+    .infobox p {
+        font-size: 0.7rem;
+    }
+    .card{
+        height: 370px;
+    }
+    .card-body{
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+    .card-body p{
+        font-size: 0.7rem;
+    }
+    .cta-section h3 {
+        font-size: 1.9rem;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .infobox{
+        padding: 3rem;
+    }
+    .infobox h2 {
+        font-size: 2rem;
+    }
+    .infobox p {
+        font-size: 0.8rem;
+    }
+    .cta-section h3 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}

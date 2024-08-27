@@ -34,8 +34,17 @@ nav {
     font-weight: 400;
     font-style: normal;
 }
+.navbar-toggler-icon{
+    background-image: url(/burger.svg);
+}
 .navbar-nav {
     border-bottom: solid 1px white;
+}
+.btn {
+    color: #c76b37;
+    background-color: white;
+    border-radius: .1rem;
+    font-size: .9rem;
 }
 .down{
     backdrop-filter: blur(7px);
@@ -46,6 +55,7 @@ nav {
 }
 .nav-link{
     color: white;
+    font-size: .9rem;
 }
 .nav-link.active{
     font-family: "IBM Plex Mono", monospace;
@@ -57,9 +67,13 @@ nav {
     margin: 0rem 3rem;
 }
 .navbar-toggler {
-    margin: 0.5rem 3rem 0 0;
+    margin: 0rem 3rem 0 0;
     border: none;
-    color: #ffffff00;
+    background-color: #5d472f30;
+    border-radius: 0.15rem;
+}
+.offcanvas {
+    height: 100vw;
 }
 
 @media (max-width: 575.98px) {
@@ -69,4 +83,32 @@ nav {
     .navbar-toggler {
         margin: 0.5rem 1rem 0 0;
     }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .navbar-nav li{
+        margin-right: 1.5rem;
+    }
+    .nav-link{
+        font-size: .8rem;
+    }
+    .btn{
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px){
+
+}
+
+@media screen and (min-width: 1400px){
+
 }

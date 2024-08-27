@@ -11,7 +11,7 @@
     </section>
     <section class="welcome-section">
         <div class="container text-center">
-            <div class="col-lg-9 col-md-11 col-sm-12 mx-auto">
+            <div class="col-lg-9 col-md-11 col-sm-12 mx-auto slide-in">
                 <h4><b>WELCOME TO DAKTS,</b> SAVOR THE FLAVOR OF NATURE'S BOUNTY!</h4>
                 <div class="clearfix"></div>
                 <h2>Every bite is a celebration of mindful pleasure and reverence for Mother Nature</h2>
@@ -20,7 +20,7 @@
     </section>
     <section id="parallax-section" class="parallax-container">
         <div id="parallax" class="parallax-background">
-            <div class="container-fluid parallax-content text-center">
+            <div class="container-fluid parallax-content text-center slide-in">
                 <h4>Believe in the power of conscious consumption!</h4>
                 <h1>Boost your energy!</h1>
             </div>
@@ -30,10 +30,10 @@
     <section class="lovers-section">
         <div class="container">
             <div class="row justify-content-md-center chlovers">
-                <div class="col-lg-4 col-md-5 col-sm-5 col-6 nutshape">
+                <div class="col-lg-4 col-md-5 col-sm-5 col-6 nutshape slide-in">
                     <h2>Hey there, nuts and chocolate lovers!</h2>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-7 col-6">
+                <div class="col-lg-4 col-md-6 col-sm-7 col-6 slide-in">
                     <p>Seekers of self-care and guardians of holistic well-being! <b>Get ready to elevate your snacking experience with DAKTS!</b></p>
                 </div>
             </div>
@@ -45,7 +45,7 @@
     <section class="products-section">
         <div class="container-fluid">
             @if (products.length > 0) {
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleAutoplaying" class="carousel slide slide-in" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="card">
@@ -103,7 +103,7 @@
             <div class="main-products">
                     <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-2 g-sm-2 g-md-2 g-lg-3">
                         @for (product of products; track $index){
-                            <div class="col card">
+                            <div class="col card slide-in">
                                 <div class="img-wrapper">
                                     <img src="http://localhost:3000/images/{{ product.image }}" alt="{{ product.name }} {{ product.subhead }}" width="92%" height="auto">
                                 </div>
@@ -113,7 +113,7 @@
                                   <p class="carousel-price">${{ product.price }}</p>
                                   <a href="#" class="btn btn-primary">Buy now</a>
                                 </div>
-                              </div>
+                            </div>
                         }
                     </div>
             </div>
@@ -121,7 +121,7 @@
             <div class="container">
                 <div class="row centerbadge">
                     <div class="col-lg-4 col-md-5 col-sm-6 col-6">
-                        <img class="d-block" src="/crafted-badge.webp" alt="100% organic, 85% cocoa" width="200">
+                        <img class="d-block slide-in" src="/crafted-badge.webp" alt="100% organic, 85% cocoa" width="200">
                     </div>
                 </div>
 
@@ -135,7 +135,7 @@
         <div class="container">
             <div class="row rightdish">
                 <div class="col-lg-6 col-md-7 col-sm-8 col-12">
-                    <img class="d-block dishnuts" src="/dakts-mix-dates-shadow.png" alt="dish nuts">
+                    <img class="d-block dishnuts slide-in" src="/dakts-mix-dates-shadow.png" alt="dish nuts">
                 </div>
             </div>  
         </div>
@@ -143,10 +143,10 @@
     <section class="crafted-section">
         <div class="container">
             <div class="row justify-content-md-center">
-                <div class="col-lg-5 col-md-5 col-sm-6 text-center">
+                <div class="col-lg-5 col-md-5 col-sm-6 text-center slide-in">
                     <img class="lifestylepics" src="/dakts-location-1.jpg" alt="women enjoying nuts">
                 </div>
-                <div class="col-lg-4 col-md-5 col-sm-6 brownshape">
+                <div class="col-lg-4 col-md-5 col-sm-6 brownshape slide-in">
                     <div class="infobox">
                         <h2>Carefully crafted to nourish your mind and body</h2>
                         <div class="clearfix"></div>
@@ -157,13 +157,13 @@
         </div>
         <div class="container">
             <div class="heart-badge">
-                <img class="d-block mx-auto" src="/heart-badge.webp" alt="Made with love badge" width="200">
+                <img class="d-block mx-auto slide-in" src="/heart-badge.webp" alt="Made with love badge" width="200">
             </div>
         </div>
     </section>
     <section class="manifiesto-section">
         <div class="container">
-            <div class="row justify-content-sm-center">
+            <div class="row justify-content-sm-center slide-in">
                 <div class="col-lg-9 col-md-11 col-sm-12">
                     <h3>Each plump date, harvested from California's sun-kissed palms, is a testament to our commitment to mindful pleasure.</h3>
                     <div class="clearfix"></div>
@@ -172,9 +172,9 @@
             </div>
         </div>
     </section>
-    <section id="parallax-section-2" class="parallax-container">
-        <div id="parallax-2" class="parallax-background-2">
-            <div class="container-fluid parallax-content-2 text-center">
+    <section class="about">
+        <div class="container about-content text-center slide-in">
+            <div class="col-lg-9 col-md-11 col-sm-12 mx-auto">
                 <h2>Embrace the organic revolution</h2>
                 <div class="clearfix"></div>
                 <p>Each delectable DAKTS creation is crafted using only the finest, ethically sourced ingredients, because we believe that treating yourself shouldn't come at the expense of the planet.</p>
@@ -184,7 +184,7 @@
 
     <section class="cta-section">
         <div class="container text-center">
-            <div class="col-lg-9 col-md-11 col-sm-12 mx-auto">
+            <div class="col-lg-11 col-md-12 col-sm-12 mx-auto slide-in">
                 <h3>So, are you ready to awaken your senses and nourish your soul with DAKTS?</h3>
                 <div class="clearfix"></div>
                 <p>Savor the exquisite flavors bite to bite and reconnect with the essence of who you are – a steward of the earth, fueled by passion, discipline, and a deep reverence for our shared origins.</p>

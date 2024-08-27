@@ -14,19 +14,22 @@
         <div class="offcanvas-body">
           <ul id="navspace" class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
+                <a class="nav-link" routerLinkActive="active" aria-current="page" routerLink="home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="storie">Our passion</a>
+                <a class="nav-link" routerLinkActive="active" aria-current="page" routerLink="about">Our passion</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" routerLink="ingredients">Our harvest</a>
               </li>
-              <!-- <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="shop">Our snacks</a>
+              </li>
+              <!--<li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" routerLink="shop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Our snacks
                 </a>
-                <ul class="dropdown-menu">
+                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Peanut Butter Flavor</a></li>
                   <li><a class="dropdown-item" href="#">Pistachio Butter Flavor</a></li>
                   <li><a class="dropdown-item" href="#">Almond Butter Flavor</a></li>
@@ -35,10 +38,22 @@
                     <hr class="dropdown-divider">
                   </li>
                   <li><a class="dropdown-item" href="#">Flan Date Caramel</a></li>
-                </ul>
-              </li> -->
+                </ul> 
+              </li>-->
+              @if (loginService.isLogin()){
               <li class="nav-item">
+                
+                <a class="nav-link" routerLink="my-account">My Account</a>
+              
+              </li>
+            }
+              <li class="nav-item">
+                @if (loginService.isLogin()){
+                  <!-- <a class="nav-link" routerLink="my-account">My Account</a> -->
+                  <button type="button" class="btn" (click)="loginService.logout()">Log Out</button>
+                } @else {
                   <a class="nav-link" routerLink="login">Log In</a>
+                }
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" routerLink="cart">Cart(0)</a>
